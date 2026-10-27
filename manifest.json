@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "Moodle Annotate PDF Pen Support (Firefox)",
+  "version": "0.1",
+
+  "description": "Adds pen support to the Moodle annotate pdf plugin. (Tested with Surface Pro 8 pen on Moodle 4.5)",
+
+  "icons": {
+    "48": "icons/icon-48.png"
+  },
+
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "moodle_annotate_pdf_pen@m0litz.com",
+      "data_collection_permissions": {
+        "required": ["none"]
+      }
+    }
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*/mod/assign/view.php?*action=grader*"],
+      "js": ["pen.js"]
+    }
+  ]
+}
