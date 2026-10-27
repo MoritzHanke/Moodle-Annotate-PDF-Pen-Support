@@ -52,7 +52,7 @@ function reset_buttons(){
 
 document.addEventListener('pointerdown', (event) => {
     if (event.pointerType === 'pen') {
-        if (event.buttons === 32) { // Button 1 (primary barrel button)
+        if ((event.buttons & 32) !== 0) { // Button 32 --> Pen eraser button
             pressButtonAutomatically("selectbutton");
         } else {
             pressButtonAutomatically(last_draw_button);
