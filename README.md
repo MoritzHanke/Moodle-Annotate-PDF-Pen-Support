@@ -1,5 +1,6 @@
 # Overview
-This Firefox plugin adds Stylus support to the "Moodle annotate pdf" plugin. (Testes on Moodle 4.5 with Surface Pro 8 Stylus)<br><br>
+This Firefox plugin adds stylus support to the Moodle "annotate pdf" plugin. 
+(Tested on Moodle 4.5 with Surface Pro 8 Stylus). Only activates when grading submissions (meaning urls that match: [...]/mod/assign/view.php?[...]action=grader[...])<br><br>
 **Features include**:
 - automatically switch between 
   - dragging-tool with touch, 
