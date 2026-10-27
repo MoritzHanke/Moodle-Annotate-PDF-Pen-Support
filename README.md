@@ -7,3 +7,4 @@ This Firefox plugin adds Stylus support to the "Moodle annotate pdf" plugin. (Te
   - selecting-tool with the Pen eraser button.<br>
     (This tool counts as a drawing tool, but the pen-eraser switches to this tool only temporarily)
   
+- removed the "Draft annotations saved"-message that was spammed (works for english and german)

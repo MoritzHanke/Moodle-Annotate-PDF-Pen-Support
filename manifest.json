@@ -1,9 +1,10 @@
 {
   "manifest_version": 3,
-  "name": "Moodle Annotate PDF Pen Support (Firefox)",
-  "version": "0.1",
+  "name": "Moodle Annotate PDF Pen Support",
+  "version": "1.0",
 
-  "description": "Adds pen support to the Moodle annotate pdf plugin. (Tested with Surface Pro 8 pen on Moodle 4.5)",
+  "description": "Adds pen support to the Moodle annotate pdf plugin and removes \"Draft annotations saved\"-message.",
+  "homepage_url": "https://github.com/MoritzHanke/Moodle-Annotate-PDF-Pen-Support",
 
   "icons": {
     "48": "icons/icon-48.png"
