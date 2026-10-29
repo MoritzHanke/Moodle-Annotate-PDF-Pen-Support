@@ -12,7 +12,6 @@ if (window.location.href.toLowerCase().includes("moodle")){
     let test_button = null;
 
     function check_init(){
-        console.log("button:" + test_button);
         if (currentbutton === "" || !document.contains(test_button)) {
             currentbutton = "_test";
             let _button = document.getElementsByClassName("penbutton");
@@ -98,6 +97,7 @@ if (window.location.href.toLowerCase().includes("moodle")){
     });
 
     function pressButtonAutomatically(button_class){
+        check_init();
         if (currentbutton === button_class) return;
 
         if (neutral_classes.includes(button_class)) {
@@ -106,7 +106,6 @@ if (window.location.href.toLowerCase().includes("moodle")){
 
             if (button.length >= 1) {
                 let b = last_draw_button; //
-                check_init();
                 button[0].click();
                 last_draw_button = b;
             }else{
@@ -116,7 +115,6 @@ if (window.location.href.toLowerCase().includes("moodle")){
             // just click the button
             let button = document.getElementsByClassName(button_class);
             if (button.length >= 1) {
-                check_init();
                 button[0].click();
             }else{
                 reset_buttons();
