@@ -3,8 +3,8 @@ if (window.location.href.toLowerCase().includes("moodle")){
     let currentbutton = "";
     let last_draw_button = "penbutton";
 
-    let dont_draw_classes = ["commentcolourbutton", "dragbutton"]; //should not be switched back when drawing
-    let neutral_classes = ["selectbutton", "commentbutton"]; //switch back only if manually selected
+    let dont_draw_classes = ["commentbutton", "commentcolourbutton", "dragbutton"]; //should not be switched back when drawing
+    let neutral_classes = ["selectbutton"]; //switch back only if manually selected
     let draw_classes = ["penbutton", "linebutton", "rectanglebutton", "ovalbutton", // switch back
         "highlightbutton", "stampbutton", "currentstampbutton"];
 
