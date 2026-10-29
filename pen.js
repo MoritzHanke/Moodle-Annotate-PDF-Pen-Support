@@ -9,7 +9,6 @@ if (window.location.href.toLowerCase().includes("moodle")){
         "highlightbutton", "stampbutton", "currentstampbutton"];
 
     let observer = null;
-
     let test_button = null;
 
     function check_init(){
@@ -56,6 +55,9 @@ if (window.location.href.toLowerCase().includes("moodle")){
             // remove the "changes-saved" message after every change
             let warning_container = document.getElementsByClassName("warningmessages");
             if (warning_container.length >= 1) {
+                if (observer !== null) {
+                    observer.disconnect();
+                }
                 observer = new MutationObserver((mutations) => {
                     mutations.forEach((mutation) => {
                         mutation.addedNodes.forEach((node) => {
