@@ -10,9 +10,17 @@ if (window.location.href.toLowerCase().includes("moodle")){
 
     let observer = null;
 
+    let test_button = null;
+
     function check_init(){
-        if (currentbutton === "") {
+        console.log("button:" + test_button);
+        if (currentbutton === "" || !document.contains(test_button)) {
             currentbutton = "_test";
+            let _button = document.getElementsByClassName("penbutton");
+            if (_button.length >= 1) {
+                test_button = _button[0];
+            }
+
             console.log("init Buttons");
             for (let bc of dont_draw_classes) {
                 let button = document.getElementsByClassName(bc);
